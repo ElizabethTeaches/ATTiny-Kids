@@ -28,51 +28,51 @@ void loop()
   
   {
 
-  digitalWrite(0, HIGH);    //Set the LED pins to HIGH. This gives power to the LED and turns it on
-  digitalWrite(1, HIGH);    //Set the LED pins to HIGH. This gives power to the LED and turns it on
-  digitalWrite(2, HIGH);    //Set the LED pins to HIGH. This gives power to the LED and turns it on
-  digitalWrite(3, HIGH);    //Set the LED pins to HIGH. This gives power to the LED and turns it on
+  digitalWrite(0, HIGH);    //Set the LED pin to HIGH. This gives power to the LED and turns it on
+  digitalWrite(1, HIGH);    //Set the LED pin to HIGH. This gives power to the LED and turns it on
+  digitalWrite(2, HIGH);    //Set the LED pin to HIGH. This gives power to the LED and turns it on
+  digitalWrite(3, HIGH);    //Set the LED pin to HIGH. This gives power to the LED and turns it on
   delay(500);   // Wait for a half a second
 
-  digitalWrite(0, LOW);   // Set the LED pins to LOW. This turns it off
+  digitalWrite(0, LOW);   // Set the LED pin to LOW. This turns it off
   delay(200);    // Wait for a half second
-  digitalWrite(1, LOW);   // Set the LED pins to LOW. This turns it off
+  digitalWrite(1, LOW);   // Set the LED pin to LOW. This turns it off
   delay(200);    // Wait for a half second
-  digitalWrite(2, LOW);   // Set the LED pins to LOW. This turns it off
+  digitalWrite(2, LOW);   // Set the LED pin to LOW. This turns it off
   delay(200);    // Wait for a half second
-  digitalWrite(3, LOW);   // Set the LED pins to LOW. This turns it off
+  digitalWrite(3, LOW);   // Set the LED pin to LOW. This turns it off
   delay(200);    // Wait for a half second
 
    }
 
    else if (buttonState == HIGH && flag == 1)   //  Rapid blink - mode 1
    {
-  digitalWrite(0, HIGH);    //Set the LED pins to HIGH. This gives power to the LED and turns it on
-  digitalWrite(1, HIGH);    //Set the LED pins to HIGH. This gives power to the LED and turns it on
-  digitalWrite(2, HIGH);    //Set the LED pins to HIGH. This gives power to the LED and turns it on
-  digitalWrite(3, HIGH);    //Set the LED pins to HIGH. This gives power to the LED and turns it on
+  digitalWrite(0, HIGH);    //Set the LED pin to HIGH. This gives power to the LED and turns it on
+  digitalWrite(1, HIGH);    //Set the LED pin to HIGH. This gives power to the LED and turns it on
+  digitalWrite(2, HIGH);    //Set the LED pin to HIGH. This gives power to the LED and turns it on
+  digitalWrite(3, HIGH);    //Set the LED pin to HIGH. This gives power to the LED and turns it on
   delay(200);   // Wait for a one fifth of a second
 
-  digitalWrite(0, LOW);   // Set the LED pins to LOW. This turns it off
-  digitalWrite(1, LOW);   // Set the LED pins to LOW. This turns it off
-  digitalWrite(2, LOW);   // Set the LED pins to LOW. This turns it off
-  digitalWrite(3, LOW);   // Set the LED pins to LOW. This turns it off
+  digitalWrite(0, LOW);   // Set the LED pin to LOW. This turns it off
+  digitalWrite(1, LOW);   // Set the LED pin to LOW. This turns it off
+  digitalWrite(2, LOW);   // Set the LED pin to LOW. This turns it off
+  digitalWrite(3, LOW);   // Set the LED pin to LOW. This turns it off
   delay(200);    // Wait for a one fifth of a second
 
     }
   
   else if (buttonState == HIGH && flag == 2)   //  Odds and Evens - mode 2
    {
-  digitalWrite(0, HIGH);    //Set the LED pins to HIGH. This gives power to the LED and turns it on
-  digitalWrite(1, LOW);    //Set the LED pins to HIGH. This gives power to the LED and turns it on
-  digitalWrite(2, HIGH);    //Set the LED pins to HIGH. This gives power to the LED and turns it on
-  digitalWrite(3, LOW);    //Set the LED pins to HIGH. This gives power to the LED and turns it on
+  digitalWrite(0, HIGH);    //Set the LED pin to HIGH. This gives power to the LED and turns it on
+  digitalWrite(1, LOW);    //Set the LED pin to LOW. This turns it off
+  digitalWrite(2, HIGH);    //Set the LED pin to HIGH. This gives power to the LED and turns it on
+  digitalWrite(3, LOW);    //Set the LED pin to LOW. This turns it off
   delay(400);   // Wait for a two fifths of a second
 
-  digitalWrite(0, LOW);   // Set the LED pins to LOW. This turns it off
-  digitalWrite(1, HIGH);   // Set the LED pins to LOW. This turns it off
-  digitalWrite(2, LOW);   // Set the LED pins to LOW. This turns it off
-  digitalWrite(3, HIGH);   // Set the LED pins to LOW. This turns it off
+  digitalWrite(0, LOW);   // Set the LED pin to LOW. This turns it off
+  digitalWrite(1, HIGH);   // Set the LED pin to HIGH. This gives power to the LED and turns it on
+  digitalWrite(2, LOW);   // Set the LED pin to HIGH. This gives power to the LED and turns it on
+  digitalWrite(3, HIGH);   // Set the LED pin to LOW. This turns it off
   delay(400);    // Wait for a two fifths of a second
 
     }
