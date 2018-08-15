@@ -47,7 +47,7 @@ void loop() // This is the code that will run in a continuous loop on the ATTiny
     {
       myServo0.write(pos0);              // this sets Servo0 to pos0
       delay(15);                         // this waits 15ms for the servo to reach the pos0
-      SoftwareServo::refresh();            // this refreshes the servos location
+      SoftwareServo::refresh();          // this refreshes the servos location
     }
     digitalWrite(ledPin2, HIGH);           // This turns the first led on
     for(pos1 = 0; pos1 < 180; pos1 += 15)  // This sets up the same sweep for Servo1 after the first servo finishes
@@ -56,7 +56,7 @@ void loop() // This is the code that will run in a continuous loop on the ATTiny
       delay(15);                       
       SoftwareServo::refresh();  
     }
-    digitalWrite(ledPin3, HIGH);           // This turns the first led on
+    digitalWrite(ledPin3, HIGH);           // This turns the second led on
     for(pos0 = 180; pos0 >= 1; pos0 -= 15)
     {
       myServo0.write(0);              
@@ -70,7 +70,7 @@ void loop() // This is the code that will run in a continuous loop on the ATTiny
       delay(15);                       
       SoftwareServo::refresh();
     }
-     digitalWrite(ledPin3, LOW);          // This turns the first led off
+     digitalWrite(ledPin3, LOW);          // This turns the second led off
   }
     else if (buttonState == HIGH && flag == 1) //This does Servo0 fast and Servo1 slow
   {
