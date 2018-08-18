@@ -55,7 +55,7 @@ void loop() // This is the code that will run in a continuous loop on the ATTiny
     digitalWrite(ledPin3, HIGH);           // This turns the third led on
     for(pos0 = 180; pos0 >= 0; pos0 -= 15) // start at position 180, and until it gets to position 0, go down by 15 each time through
     {
-      myServo0.write(0);              
+      myServo0.write(pos0);              
       delay(15);                       
       SoftwareServo::refresh();
     }
